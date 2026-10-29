@@ -4,8 +4,9 @@ public class LEmpleadoJefe extends LEmpleado
 {
 	private long bonificacion;
 
-	public LEmpleadoJefe(int id,String nombre, long sueldo, int annio, int mes, int dia) {
+	public LEmpleadoJefe(int id,String nombre, long sueldo, int annio, int mes, int dia, long bonificacion) {
 		super(id,nombre,sueldo,annio,mes,dia);
+		this.bonificacion = bonificacion;
 	}
 
 	
