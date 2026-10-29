@@ -11,9 +11,10 @@ public class LEmpleadoJefe extends LEmpleado
 
 	
 	public void estableceBonificacion(long bonificacion) {
-		this.bonificacion = bonificacion;
+		if (bonificacion >= 0) {
+			this.bonificacion = bonificacion;
+		}
 	}
-
 	public long getSueldoEmp() {
 		return super.getSueldoEmp() + bonificacion;
 	}
