@@ -8,13 +8,12 @@ public class LEmpleadoJefe extends LEmpleado
 		super(id,nombre,sueldo,annio,mes,dia);
 	}
 
-	// Este metodo faltaba: la vista lo llamaba y no existia.
+	
 	public void estableceBonificacion(long bonificacion) {
 		this.bonificacion = bonificacion;
 	}
 
 	public long getSueldoEmp() {
-		long salariojefe = super.getSueldoEmp();
-		return (salariojefe + bonificacion);
+		return super.getSueldoEmp() + bonificacion;
 	}
-}
+	}
