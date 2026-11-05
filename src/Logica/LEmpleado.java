@@ -71,16 +71,13 @@ public class LEmpleado extends BEmpleado implements IPersistencia<BEmpleado> {
 		super.setSueldoEmp(super.getSueldoEmp() + aumento);
 	}
 
-	// Guarda este empleado en empleados.txt usando el metodo de la interfaz
+	
 	public void LEmpleadoIngresar()
 	{
 		guardar(this);
 	}
 
-	// ===================== METODOS DE LA INTERFAZ IPersistencia<BEmpleado> =====================
-
-	// Guarda UN empleado al final del archivo empleados.txt (acceso aleatorio).
-	// OJO: esto NO es serializacion, es escritura campo por campo.
+	
 	public void guardar(BEmpleado objeto)
 	{
 		try
@@ -95,7 +92,7 @@ public class LEmpleado extends BEmpleado implements IPersistencia<BEmpleado> {
 		}catch(IOException e) {System.out.print(e); }
 	}
 
-	// Lee TODOS los empleados de empleados.txt y los devuelve en una lista.
+	
 	public ArrayList<BEmpleado> leerTodos()
 	{
 		ArrayList<BEmpleado> lista = new ArrayList<BEmpleado>();
