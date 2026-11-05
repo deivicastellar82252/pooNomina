@@ -11,7 +11,7 @@ public class BEmpleado implements Serializable {
 	private int idEmp;
 	private String nombreEmp;
 	private long sueldoEmp;
-	private LocalDate fechaNacEmp;
+	private LocalDate fechaNacEmp;  datos y gatos incendiarios
 
 	public BEmpleado() {}
 
