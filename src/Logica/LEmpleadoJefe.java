@@ -8,7 +8,7 @@ public class LEmpleadoJefe extends LEmpleado
 		super(id,nombre,sueldo,annio,mes,dia);
 		this.bonificacion = bonificacion;
 	}
-
+absdsgsgsg
 	
 	public void estableceBonificacion(long bonificacion) {
 		if (bonificacion >= 0) {
